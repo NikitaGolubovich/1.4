@@ -14,13 +14,17 @@ body {
 }
 
 .container {
-    margin: 1.125rem 1.5rem 0;
+    margin: 0 1.5rem;
+    padding-top: 1.125rem;
 }
 
 aside {
     max-width: 20rem;
     background: #ffffff;
     position: relative;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    top: 0;
+    bottom: 0;
 }
 
 .aside__header {
@@ -69,7 +73,7 @@ aside {
     white-space: nowrap;
 }
 
-.aside__nav {
+.aside__nav-menu {
     margin-bottom: 16.75rem;
 }
 
@@ -103,7 +107,6 @@ aside {
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 2rem;
-    /* identical to box height, or 133% */
     letter-spacing: -0.038rem;
 }
 
@@ -136,4 +139,8 @@ aside {
     left: -1.5rem;
     top: -0.25rem;
     transition-duration: 1s;
+}
+
+.container-footer {
+    padding-bottom: 2rem;
 }
