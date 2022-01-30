@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: TT Lakes;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.013rem;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 1.125rem 1.5rem 0;
+}
+
+aside {
+    max-width: 20rem;
+    background: #ffffff;
+    position: relative;
+}
+
+.aside__header {
+    margin-bottom: 3.125rem;
+}
+
+.aside__header-btn,
+.aside__nav-btn,
+.aside__footer-btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.aside__header-list,
+.aside__nav-list,
+.aside__footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-header,
+.aside__header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside__header-list {
+    gap: 1rem;
+}
+
+.aside__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aside__nav-btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.013rem;
+    color: #1b1c21;
+    white-space: nowrap;
+}
+
+.aside__nav {
+    margin-bottom: 16.75rem;
+}
+
+.aside__footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aside__footer-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.aside__footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aside__footer-link {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.013rem;
+    color: #1b1c21;
+    white-space: nowrap;
+}
+
+.aside__footer-link--weight--bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    /* identical to box height, or 133% */
+    letter-spacing: -0.038rem;
+}
+
+.aside__footer-nav {
+    margin-bottom: 2.5rem;
+}
+
+.aside__footer-lang {
+    display: flex;
+    gap: 0.438rem;
+}
+
+.aside__footer-link--active:focus {
+    transition-duration: 1s;
+    filter: opacity(0.5);
+}
+
+.aside__nav-btn--active:focus {
+    transition-duration: 1s;
+    filter: opacity(1);
+    color: #7E7E82;
+}
+
+.highlight:focus::before {
+    content: '';
+    position: absolute;
+    border-left: 0.25rem solid #41F6D7;
+    border-radius: 0 0.25rem 0.25rem 0;
+    height: 2rem;
+    left: -1.5rem;
+    top: -0.25rem;
+    transition-duration: 1s;
+}
