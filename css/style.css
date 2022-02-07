@@ -75,6 +75,7 @@ aside {
     text-decoration: none;
     display: block;
     width: 100%;
+    cursor: pointer;
 }
 
 .aside__nav-menu {
